@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>座位查询</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/inquire.css">
+</head>
+<body>
+<div class="absPhoto">
+    <h6 class="title">座位查询</h6>
+    <!--<form action="">-->
+        <input type="text" placeholder="输入工号/内勤输入姓名">
+        <input type="submit" value="查询" id="btn">
+    <!--</form>-->
+    <div class="box show" id="box">
+        您的座位号
+        <span>六排15座</span>
+        <div class="btn">x</div>
+    </div>
+</div>
+
+
+
+<script>
+    var btn = document.getElementById('btn');
+    var box = document.getElementById('box');
+    var down = box.children[1];
+    console.log(down);
+
+    btn.onclick = function () {
+        box.className = 'box blk';
+    };
+    down.onclick = function () {
+        box.className = 'box show';
+    }
+
+
+
+</script>
+
+</body>
+</html>

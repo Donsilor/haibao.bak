@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人页面</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <!-- 引入组件库 -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <script src="html2canvas.min.js"></script>
+    <script src="canvas2image.js"></script>
+</head>
+<body>
+<div id="app">
+    <div class="absPhoto" v-bind:style="backgroundImage">
+    <a href="javascript:" class="logo"><img src="images/logo.png" alt=""></a>
+    <div class="side_slogan"><img src="images/side_slogan.jpg" alt=""></div>
+    <div class="rightBtns">
+        <a v-if="!save" href="javascript:" class="signature" v-on:click="toEditSign(1)">签名</a>
+        <input v-if="editName" type="text" class="enter_signature" placeholder="" v-model="name" @blur="saveName">
+        <div v-if="!editName" class="text_signature">{{name}}</div>
+        <!--<a href="javascript:" class="upload" v-on:click="uploadPic">上传</a>-->
+        <el-upload
+                :show-file-list="false"
+                accept="image/png,image/gif,image/jpeg"
+                action="/haibao/api/upload"
+                :on-success="handleExceed">
+            <a href="javascript:" class="upload" v-if="!save">上传</a>
+        </el-upload>
+    </div>
+
+    <div class="absSlogan_2">
+        <a href="#" v-on:click="toEditSign(2)"><span  v-html="signFormat" ></span></a>
+        <input v-if="editSign" type="text" placeholder="输入语录" v-model="sign" @blur="saveInput">
+    </div>
+    <div class="qrcode_2"><img src="" alt=""></div>
+    
+    
+    </div>
+    
+
+    <div class="btns">
+        <a href="#" @click="returnAll">还原</a>
+        <a href="#" @click="saveAll">保存预览</a>
+    </div>
+
+
+    <div class="arrow" v-if="!save">
+        <a href="index.html" class="arrowL"><img src="images/arrowL.png" alt=""></a>
+        <a href="index_3.html" class="arrowR"><img src="images/arrowR.png" alt=""></a>
+    </div>
+
+
+</div>
+<script src="index.js"></script>
+</body>
+</html>

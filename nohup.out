@@ -1,0 +1,80 @@
+2018/08/28 22:03:54.815470 [INFO] qbox.us/cc/config/load_conf.go:40: Use the config file of  /root/.service/service.conf
+2018/08/28 22:03:54.826578 [ERROR] qbox.us/cc/config/load_conf.go:83: Load conf failed: open /root/.service/service.conf: no such file or directory
+2018/08/28 22:03:54 [WARN][geedooweb.com/geedooweb/haibao] main.go:21: Load report config file failed
+ Use default config:
+2018/08/28 22:03:54 [INFO][geedooweb.com/geedooweb/haibao] main.go:29: {E:{Dev:true} M:{Host:127.0.0.1 DB:truedo_dev Mode: Username: Password: AuthDB: SyncTimeoutInS:0 Direct:false Safe:<nil> Proxies:<nil>} S:{Port:8011 MaxProcs:1 DebugLevel:1 StaticPath:./} Wx:{Appid: Secret:}}
+[GIN-debug] [WARNING] Now Gin requires Go 1.6 or later and Go 1.7 will be required soon.
+
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+2018/08/28 22:03:54 [INFO][geedooweb.com/geedooweb/haibao] main.go:50: ./
+[GIN-debug] GET    /api/ping                 --> main.main.func1 (6 handlers)
+[GIN-debug] GET    /api/version              --> main.main.func2 (6 handlers)
+[GIN-debug] GET    /api/sign                 --> geedooweb.com/geedooweb/haibao/api.(*Service).GetWxSign-fm (6 handlers)
+[GIN-debug] POST   /api/upload               --> geedooweb.com/geedooweb/haibao/api.(*Service).UploadPic-fm (6 handlers)
+2018/08/28 22:03:54 [INFO][geedooweb.com/geedooweb/haibao] main.go:109: listening on :8011 use http
+[GIN-debug] Listening and serving HTTP on 0.0.0.0:8011
+[GIN] 2018/08/28 - 22:04:26 | 200 |     101.208µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/28 - 22:04:46 | 200 |      78.761µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/28 - 22:07:35 | 200 |      54.081µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/28 - 22:08:17 | 200 |      59.552µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/28 - 22:08:41 | 200 |      79.306µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/28 - 22:13:29 | 200 |      57.275µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/28 - 22:14:49 | 200 |      57.778µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/28 - 22:16:07 | 200 |      67.516µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/28 - 22:17:29 | 200 |      52.953µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/28 - 22:22:33 | 200 |      53.566µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/28 - 22:25:53 | 200 |      73.183µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/28 - 22:26:19 | 200 |      72.143µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/28 - 22:26:31 | 200 |      54.876µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/28 - 22:27:20 | 200 |      97.755µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/28 - 22:53:10 | 200 |      57.051µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/28 - 22:53:35 | 200 |      59.816µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/29 - 15:32:23 | 200 |   13.786116ms |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/29 - 15:32:33 | 200 |      51.862µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/29 - 15:32:44 | 200 |      72.373µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/29 - 15:32:57 | 200 |      67.372µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/29 - 15:36:28 | 200 |      54.612µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/29 - 16:08:39 | 200 |      64.425µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/29 - 16:08:46 | 200 |      54.764µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/29 - 17:30:42 | 200 |      52.555µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/29 - 17:30:50 | 200 |      59.473µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/29 - 17:31:18 | 200 |       55.34µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/29 - 18:36:32 | 200 |      62.642µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/29 - 18:36:36 | 200 |      78.506µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/29 - 18:38:42 | 200 |      65.822µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/29 - 18:39:16 | 200 |      53.176µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/29 - 18:40:55 | 200 |      69.805µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/29 - 18:48:01 | 200 |      66.304µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/29 - 18:48:07 | 200 |      54.803µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/29 - 18:49:07 | 200 |      70.311µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/29 - 19:44:04 | 200 |      73.683µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/29 - 19:44:26 | 200 |      64.909µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/29 - 21:02:08 | 200 |      54.613µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/29 - 21:03:57 | 200 |      53.457µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/29 - 21:05:19 | 200 |      52.819µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/29 - 21:05:42 | 200 |      58.206µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/29 - 21:09:43 | 200 |       55.16µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/29 - 21:10:10 | 200 |      67.431µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/29 - 21:13:03 | 200 |      54.385µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/29 - 21:13:27 | 200 |      52.154µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/29 - 21:52:22 | 200 |      63.304µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/29 - 21:52:22 | 200 |      54.527µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/29 - 21:54:51 | 200 |      58.124µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/29 - 22:30:28 | 200 |      65.934µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/30 - 08:17:24 | 200 |    4.220891ms |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/31 - 16:03:56 | 200 |    1.999184ms |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/31 - 16:07:57 | 200 |      52.318µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/31 - 16:08:10 | 200 |      60.907µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/31 - 16:10:17 | 200 |      61.834µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/31 - 16:10:28 | 200 |      56.649µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/31 - 16:11:44 | 200 |      53.372µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/31 - 16:12:07 | 200 |      54.439µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/31 - 16:26:56 | 200 |      64.147µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/31 - 16:35:10 | 200 |      71.235µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/31 - 16:35:21 | 200 |       64.27µs |       127.0.0.1 | POST     /api/upload
+[GIN] 2018/08/31 - 16:47:21 | 200 |      74.515µs |       127.0.0.1 | POST     /api/upload

@@ -1,0 +1,82 @@
+
+.absPhoto{position: fixed;top: 0;right: 0;bottom: 3rem;left: 0;background-repeat: no-repeat;background-position:top center;background-size: 100% auto;max-width:750px;margin:auto;}
+
+.logo{position: fixed;top: 1.5rem;left: 1.5rem;width: 32%;}
+.logo img{display: block;width: 100%;}
+
+.side_slogan{position: fixed;top: 5rem;left: 1.5rem;width: 8%;}
+.side_slogan img{display: block;width: 100%;}
+
+.rightBtns{position: fixed;right: 1.5rem;top: 25%; z-index:99;}
+.rightBtns a{display: block;width: 3.8rem;height: 3.8rem;background-color: #fe7935;color: #fff;text-align: center;border-radius: 50%;margin-bottom: 1rem;font-size: 14px;padding-top: 2.2rem;}
+.rightBtns a.signature{background: #fe7935 url("../images/icon_signature.png") no-repeat center 25%/1.8rem;}
+.rightBtns a.upload{background: #fe7935 url("../images/icon_upload.png") no-repeat center 25%/1.8rem;}
+
+.absSlogan{font-size: 2rem;line-height: 1.2;color: #fe7935;position: fixed;top: 55%;left: 50%;width: 100%;text-align: center;transform: translateX(-50%);}
+.absSlogan span{text-align:center;padding-right: 10%;}
+.absSlogan input{margin:auto;font-size: 20px; text-align:center;padding-right: 5%;background:none;border:none;border-bottom:1px solid #fff;color:#fff;}
+
+.slogan{position: fixed;right: 0;bottom: 3rem;width: 68.75%;}
+.slogan img{display: block;width: 100%;}
+
+.qrcode{position: fixed;bottom:3rem;left: 1.5rem;width: 5rem;height: 5rem;background-color: #fe7935;padding: .3rem;}
+.qrcode img{display: block;width: 100%;height: 100%;}
+
+
+.enter_signature{position:fixed;top:28%;right:1rem;width:5rem;height:auto;font-size:14px;color:#333;text-align:center; background:#fff; border:none;}
+.text_signature{position:fixed;top:15%;right:2rem;font-size:16px;color:#333;writing-mode:vertical-lr;}
+.quotations{position:fixed;top:55%;left:50%;font-size:14px;color:#333;transform:translateX(-50%);width:50%;text-align:center;}
+
+.btns{position:fixed;bottom:0;right:0;padding-bottom:.5rem;}
+.btns a{display:inline-block;width:7rem;height:2.2rem;border-radius:5px;font-size:1rem;color:#333;text-align:center;margin-right:1rem;line-height:2.1rem;}
+.btns a:first-child{border:1px solid #fe7935;color:#fe7935;}
+.btns a:last-child{background:#fe7935;color:#fff;}
+
+
+.qrcode_2{position: fixed;bottom:4rem;right: 1.5rem;width: 5rem;height: 5rem;background-color: #fe7935;padding: .3rem;}
+.qrcode_2 img{display: block;width: 100%;height: 100%;}
+
+.absSlogan_2{position:fixed;width:95%;height:16rem;background:url(../images/slogan_1.png)no-repeat left center/100% 100%;left:0;bottom:6rem;}
+.absSlogan_2 a{display:inline-block;width:70%;font-size:1.8rem;line-height:2.2rem;color:#fff;font-weight:600;position:absolute;top:6.5rem;left:1rem;}
+.absSlogan_2 input{isplay: inline-block;width: 70%;font-size: 1.8rem;line-height: 2.2rem;color: #fff;font-weight: 600;position: absolute;top: 6.5rem;left: 1rem; background:none; border:none; border-bottom:1px solid #FFF;}
+
+
+.arrow{position:absolute;top:50%;width:100%;}
+.arrow .arrowL{display:block;width:3rem;height:3rem;background:rgba(0,0,0,.5);border-radius:50%;box-shadow:0 0 10px #fff;position:absolute;left:.5rem;}
+.arrow .arrowL img{width:80%;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);}
+
+.arrow .arrowR{display:block;width:3rem;height:3rem;background:rgba(0,0,0,.5);border-radius:50%;box-shadow:0 0 10px #fff;position:absolute;right:.5rem;}
+.arrow .arrowR img{width:80%;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);}
+
+
+/*第三种方式样式迁移到这里*/
+.absPhoto.box{background: url(../images/bk_1.jpg)no-repeat center/cover; padding-top:2rem;}
+.box .logo{width:90%;margin:auto;height:auto; position:relative; top:0; left:0;}
+.box .logo span:first-child{width:40%;height:auto;}
+.box .logo span:last-child{width:55%;height:auto;}
+.box .logo span img{width:100%;height:auto;}
+
+.box .photo{width:90%;height:70%;margin:1rem auto 0;overflow:hidden;}
+.box .photo img{width:100%;}
+
+.box .btns{position: fixed;right:1.5rem;top:25%; z-index:99;}
+.box .btns  .signature,
+.box .btns  .upload {display:block;width:3.8rem;height:3.8rem;border-radius:50%;background:#fe7935 ;text-align:center;position:relative;margin-bottom:1rem;padding:.5rem 0;}
+.box .btns a{ margin-right:0;}
+.box .btns  a img{width:40%;margin:auto;display:block;}
+.box .btns  a span{display:block;font-size:14px;color:#fff; line-height:1.5rem;}
+
+.box .btns input{position: fixed;right:1rem;top:28%;width:5rem;text-align:center;font-size:14px;color:#333;}
+.box .btns .name{position:absolute;right:1rem;top:-1rem; writing-mode:vertical-lr;font-size: 16px;color: #fff;}
+
+
+.box .slogan{position:absolute;top:54%;left:50%;transform:translatex(-50%);width:75%;height:8rem;background:url(../images/icon_slogan_bk.png)no-repeat center/100% 100%;}
+.box .slogan a{display:block;font-size:1.6rem;color:#fff;text-align:center;width:80%;height:100%;margin:auto;padding:2rem 0 1rem;font-weight:600;text-shadow:0 0 3px #000;}
+.box .slogan input{ position:absolute; top:2rem; left:1rem; font-size:16px; line-height:1.6rem; color:#fff;text-align:center;width:80%;margin:auto; background:none; border:none; border-bottom:1px solid #FFF;}
+
+.box .qrcode{width:5rem;height:5rem;background:#fff;position:absolute;left:1.2rem;bottom:0.5rem;}
+.box .dv_1{width:50%;height:auto;position:absolute;right:1.2rem;text-align:center;bottom:0.2rem;}
+.box .dv_1 img{width:100%;display:block;}
+.box .dv_1 span{font-size:14px;color:#fff;}
+
+.box .text_signature{position:fixed;top:20%;right:2rem;font-size:16px; color:#333;  writing-mode: vertical-lr;}
